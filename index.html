@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyricle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Lyricle</h1>
+  <div id="game-area">
+    <p id="lyrics-display">Cargando letra...</p>
+    <input type="text" id="user-guess" placeholder="Adivina la canción">
+    <button id="submit-guess">¡Adivina!</button>
+    <p id="feedback"></p>
+    <details id="full-lyrics">
+      <summary>Revelar letra completa</summary>
+      <pre id="lyrics-content"></pre>
+    </details>
+  </div>
+  <div id="filters">
+    <label for="genre">Género:</label>
+    <select id="genre">
+      <option value="rock">Rock</option>
+      <option value="pop">Pop</option>
+      <option value="hip-hop">Hip-Hop</option>
+      <option value="country">Country</option>
+      <option value="metal">Metal</option>
+      <option value="reggae">Reggae</option>
+      <option value="electronic">Electrónica</option>
+      <option value="indie">Indie</option>
+      <option value="r&b">R&B</option>
+      <option value="reggaeton">Reggaeton</option>
+      <option value="jazz">Jazz</option>
+    </select>
+    <p id="filter-status" style="display: none;"></p>
+    <button id="apply-filters">Aplicar filtros</button>
+  </div>
+  <div id="controls-container"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
